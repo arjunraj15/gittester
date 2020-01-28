@@ -6,33 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 550px}
-    img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
-
-
+    
     /* Set gray background color and 100% height */
     body {
       background-color: #000000a9;
       height: 100%;
     }
-
+        
     /* On small screens, set height to 'auto' for the grid */
     @media screen and (max-width: 767px) {
-      .row.content {height: auto;}
+      .row.content {height: auto;} 
     }
   </style>
 </head>
 <body>
     <div class="container-fluid">
+
     </div>
 
 <div class="container-fluid">
@@ -44,26 +37,19 @@
       <div class="form-group">
         <label for="startDate">Start date</label>
         <input type="date" class="form-control" id="startDate"  aria-describedby="emailHelp">
-
+      
       </div>
       <div class="form-group">
         <label for="endDate">End date</label>
-        <input type="date" class="form-control" id ='endDate' aria-describedby="emailHelp">
+        <input type="date" class="form-control" id ='endDate' aria-describedby="emailHelp"> 
       </div>
       <button type="submit" class="btn btn-info  btn-lg btn-block">Generate report</button>
 <button type="button" class="btn btn btn-info btn-lg btn-block" id= "fullReport">Generate full report</button>
-<div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
-  <p>
-    Some example text that's free-flowing within the dropdown menu.
-  </p>
-  <p class="mb-0">
-    And this is more example text.
-  </p>
-</div>
       <br>
     </div>
 </form>
     <br>
+    
     <div class="col-sm-9">
       <div class="well">
         <h4>Stock open vs Stock closed chart:</h4>
@@ -78,52 +64,19 @@
               <h4>Bar cahrt : Open stock vs closed stock vs highest stock vs lowest stock and average line for stock (move the cursor through the bars to view the data)</h4>
               <p style="visibility:visible;" id= 'datathirst2'>Click the button to clear my data thirst and i will give you surprise stock report chart :-)
             </p>
-              <div id = 'chart2' class="" style="visibility: hidden;">
+              <div id = 'chart2' style="visibility: hidden;">
             </div>
             </div>
       </div>
-      <div class="col-sm-12">
-        <div class="well">
-          <h4>Bar cahrt : Open stock vs closed stock vs highest stock vs lowest stock and average line for stock (move the cursor through the bars to view the data)</h4>
-          <p style="visibility:visible;" id= 'datathirst2'>Click the button to clear my data thirst and i will give you surprise stock report chart :-)
-        </p>
-          <div id = 'chart3' class="" >
-        </div>
-        </div>
+     
+   
+      </div>
+    </div>
   </div>
-
-
-      </div>
-      <div class="row">
-
-
-
-            <div class="card col-sm-4" style="width: 35rem;">
-              <img class="card-img-top img-thumbnail" src="/image/9919370-green-arrow-moving-up.jpg" alt="stock up" style="width: 20rem; background-color: green;">
-              <div class="card-body">
-                 <h2 class="card-title">higest stock value</h2>
-                <h4 class="card-text" id='highestS')></h4>
-              </div>
-            </div>
-
-
-
-            <div class="card col-sm-4" style="width: 35rem;">
-              <img class="card-img-top img-thumbnail" src="/image/down-graph.jpg" alt="stock down" style="width: 20rem; background-color: red;">
-              <div class="card-body">
-                <h2 class="card-title" >lowest stock value</h2>
-                <h4 class="card-text"  id='lowestS'></h4>
-              </div>
-            </div>
-          </div>
-       </div>
-     </div>
-   </div>
-
+</div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src ='app.js'></script>
+<script src ='app.js'></script> 
 </body>
 </html>
